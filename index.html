@@ -1,0 +1,1102 @@
+
+<!-- Declara ao navegador que este é um documento HTML5 moderno -->
+<!DOCTYPE html>
+<!-- Define o idioma da página como Português do Brasil -->
+<html lang="pt-BR">
+
+<head>
+  <!-- Configuração de caracteres especiais -->
+  <meta charset="UTF-8">
+
+  <!-- Responsividade para celulares e tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título da página -->
+  <title>Diário de Vendas | Mentoria, Palestras e Consultoria</title>
+
+  <!-- ========================================================
+       FOLHAS DE ESTILO (Bootstrap 5.3 + Bootstrap Icons + Google Fonts)
+       ======================================================== -->
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonte Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="./Assets/styles/style.css">
+</head>
+
+<!-- Conteúdo principal -->
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar">
+
+  <!-- ========================================================
+       1. BARRA DE NAVEGAÇÃO (NAVBAR)
+       - Identidade visual do Diário de Vendas.
+       - Mantém a estrutura original.
+       - Contém: Início, Quem somos, Galeria e Localização.
+       ======================================================== -->
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+
+    <div class="container">
+
+      <!-- Logotipo e nome do empreendimento -->
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
+
+        <!-- Ícone representando conhecimento e desenvolvimento -->
+        <i class="bi bi-journal-richtext text-primary fs-4"></i>
+
+        <!-- Nome da marca -->
+        <span>Diário de Vendas</span>
+
+      </a>
+
+      <!-- Botão de navegação para dispositivos móveis -->
+      <button class="navbar-toggler border-0" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Abrir navegação">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <!-- Links de navegação -->
+      <div class="collapse navbar-collapse" id="navMenu">
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium gap-lg-2">
+
+          <!-- Início -->
+          <li class="nav-item">
+            <a class="nav-link active bi bi-house fs-5" href="#inicio"> Início </a>
+          </li>
+
+          <!-- Quem somos -->
+          <li class="nav-item">
+            <a class="nav-link" href="#quem-somos">Quem somos</a>
+          </li>
+
+          <!-- Galeria -->
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Galeria</a>
+          </li>
+
+          <!-- Localização -->
+          <li class="nav-item">
+            <a class="nav-link" href="#localizacao">Localização</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+<!-- ========================================================
+     2. BANNER / CABEÇALHO (HERO SECTION)
+     - Logo 200x200
+     - Nome e posicionamento do Diário de Vendas
+     - Botão direcionando para Fale Conosco
+     ======================================================== -->
+
+<header id="inicio" class="hero-section d-flex align-items-center">
+
+  <div class="container py-4">
+
+    <div class="row align-items-center justify-content-center text-center text-lg-start gy-4">
+
+      <!-- Coluna da esquerda: Logotipo -->
+      <div class="col-lg-4 text-center">
+
+        <img src="./Assets/images/logo_200x200.png"
+             alt="Logotipo do Diário de Vendas"
+             class="rounded-circle hero-logo img-fluid mx-auto"
+             width="200"
+             height="200">
+
+      </div>
+
+      <!-- Coluna da direita: Apresentação -->
+      <div class="col-lg-8">
+
+        <!-- Identificação da marca -->
+        <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-2 mb-3 text-uppercase fw-semibold">
+          Vendas • Conhecimento • Empreendedorismo
+        </span>
+
+        <!-- Título principal -->
+        <h1 class="display-4 fw-bold mb-3 text-white">
+          Diário de Vendas
+        </h1>
+
+        <!-- Apresentação institucional -->
+        <p class="lead text-light mb-4 opacity-75">
+          Transformamos conhecimento em resultados. Desenvolvemos pessoas e negócios por meio de mentorias, palestras e consultorias, compartilhando estratégias, experiências e soluções para impulsionar vendas e fortalecer o empreendedorismo.
+        </p>
+
+        <!-- Botões de navegação -->
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+
+          <!-- Botão principal -->
+          <a href="#fale-conosco" class="btn btn-primary btn-lg rounded-pill px-4 shadow">
+            <i class="bi bi-chat-dots-fill me-2"></i>Fale Conosco
+          </a>
+
+          <!-- Botão secundário -->
+          <a href="#quem-somos" class="btn btn-outline-light btn-lg rounded-pill px-4">
+            Conheça Nossa História
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- ========================================================
+     3. SEÇÃO: QUEM SOMOS
+     - Apresentação institucional
+     - Propósito e atuação
+     - 3 pilares do Diário de Vendas
+     ======================================================== -->
+
+<section id="quem-somos" class="bg-light">
+
+  <div class="container">
+
+    <!-- Título da seção -->
+    <div class="text-center mb-5">
+
+      <h2 class="fw-bold text-dark">Quem Somos</h2>
+
+      <p class="text-secondary">
+        Conhecimento, experiência e estratégia para transformar o universo das vendas e do empreendedorismo.
+      </p>
+
+      <div class="section-divider"></div>
+
+    </div>
+
+    <!-- Apresentação institucional -->
+    <div class="row align-items-center gy-4 mb-5">
+
+      <!-- Coluna de texto -->
+      <div class="col-lg-6">
+
+        <h3 class="fw-bold mb-3">
+          Desenvolvendo pessoas, fortalecendo negócios e transformando resultados.
+        </h3>
+
+        <p class="text-secondary leading-relaxed">
+          O <strong>Diário de Vendas</strong> é um empreendimento dedicado ao desenvolvimento profissional e empresarial, promovendo conhecimento, estratégias e experiências no universo das vendas e do empreendedorismo.
+        </p>
+
+        <p class="text-secondary">
+          Por meio de mentorias, palestras e consultorias, buscamos compartilhar conhecimentos práticos, estimular novas perspectivas e contribuir para que profissionais, empreendedores e empresas desenvolvam seu potencial e alcancem melhores resultados.
+        </p>
+
+      </div>
+
+      <!-- Coluna da imagem -->
+      <div class="col-lg-6">
+
+        <img src="https://placehold.co/600x400/1e293b/ffffff?text=Diario+de+Vendas"
+             alt="Diário de Vendas - Desenvolvimento profissional, vendas e empreendedorismo"
+             class="img-fluid rounded-4 shadow-sm w-100">
+
+      </div>
+
+    </div>
+
+    <!-- Pilares do empreendimento -->
+    <div class="row g-4">
+
+      <!-- Cartão 1: Conhecimento -->
+      <div class="col-md-4">
+
+        <div class="card h-100 p-4 border-0 shadow-sm rounded-4 custom-card text-center text-md-start">
+
+          <div class="fs-1 text-primary mb-3">
+            <i class="bi bi-lightbulb"></i>
+          </div>
+
+          <h4 class="h5 fw-bold mb-2">Conhecimento e Desenvolvimento</h4>
+
+          <p class="text-secondary mb-0">
+            Compartilhamos conhecimentos, experiências e ferramentas que contribuem para o crescimento pessoal e profissional.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Cartão 2: Estratégia -->
+      <div class="col-md-4">
+
+        <div class="card h-100 p-4 border-0 shadow-sm rounded-4 custom-card text-center text-md-start">
+
+          <div class="fs-1 text-primary mb-3">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+
+          <h4 class="h5 fw-bold mb-2">Estratégia e Resultados</h4>
+
+          <p class="text-secondary mb-0">
+            Desenvolvemos estratégias comerciais e soluções personalizadas para fortalecer vendas, negócios e resultados.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Cartão 3: Empreendedorismo -->
+      <div class="col-md-4">
+
+        <div class="card h-100 p-4 border-0 shadow-sm rounded-4 custom-card text-center text-md-start">
+
+          <div class="fs-1 text-primary mb-3">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+
+          <h4 class="h5 fw-bold mb-2">Empreendedorismo e Inovação</h4>
+
+          <p class="text-secondary mb-0">
+            Incentivamos a mentalidade empreendedora, a inovação e a busca constante por novas oportunidades de crescimento.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================================================
+     4. SEÇÃO: GALERIA
+     - Galeria de experiências e atividades
+     - Mentorias, palestras e consultorias
+     - Desenvolvimento e empreendedorismo
+     ======================================================== -->
+
+<section id="galeria">
+
+  <div class="container">
+
+    <!-- Título da seção -->
+    <div class="text-center mb-5">
+
+      <h2 class="fw-bold text-dark">Galeria de Experiências</h2>
+
+      <p class="text-secondary">
+        Conhecimento compartilhado, conexões construídas e experiências que impulsionam o universo das vendas e do empreendedorismo.
+      </p>
+
+      <div class="section-divider"></div>
+
+    </div>
+
+    <!-- Grade de imagens -->
+    <div class="row g-4">
+
+      <!-- Item 1: Palestras -->
+      <div class="col-sm-6 col-lg-4">
+
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-card">
+
+          <div class="gallery-img-wrapper">
+
+            <img src="https://placehold.co/600x450/0f172a/ffffff?text=Palestras"
+                 alt="Palestras sobre vendas e empreendedorismo"
+                 class="img-fluid">
+
+          </div>
+
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Palestras e Inspiração</h5>
+
+            <p class="text-muted small mb-0">
+              Compartilhamento de conhecimentos, ideias e experiências para inspirar profissionais e empreendedores.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Item 2: Mentorias -->
+      <div class="col-sm-6 col-lg-4">
+
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-card">
+
+          <div class="gallery-img-wrapper">
+
+            <img src="https://placehold.co/600x450/0284c7/ffffff?text=Mentorias"
+                 alt="Mentorias e desenvolvimento profissional"
+                 class="img-fluid">
+
+          </div>
+
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Mentorias e Desenvolvimento</h5>
+
+            <p class="text-muted small mb-0">
+              Orientação e acompanhamento para desenvolver habilidades, fortalecer competências e alcançar objetivos.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Item 3: Consultorias -->
+      <div class="col-sm-6 col-lg-4">
+
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-card">
+
+          <div class="gallery-img-wrapper">
+
+            <img src="https://placehold.co/600x450/334155/ffffff?text=Consultorias"
+                 alt="Consultorias estratégicas para empresas"
+                 class="img-fluid">
+
+          </div>
+
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Consultoria Estratégica</h5>
+
+            <p class="text-muted small mb-0">
+              Análise de oportunidades, planejamento comercial e soluções para fortalecer o desempenho dos negócios.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Item 4: Treinamentos -->
+      <div class="col-sm-6 col-lg-4">
+
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-card">
+
+          <div class="gallery-img-wrapper">
+
+            <img src="https://placehold.co/600x450/1e293b/ffffff?text=Treinamentos"
+                 alt="Treinamentos e capacitação em vendas"
+                 class="img-fluid">
+
+          </div>
+
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Treinamentos e Capacitação</h5>
+
+            <p class="text-muted small mb-0">
+              Desenvolvimento de técnicas de vendas, negociação, atendimento e relacionamento com clientes.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Item 5: Empreendedorismo -->
+      <div class="col-sm-6 col-lg-4">
+
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-card">
+
+          <div class="gallery-img-wrapper">
+
+            <img src="https://placehold.co/600x450/0f766e/ffffff?text=Empreendedorismo"
+                 alt="Encontros e experiências de empreendedorismo"
+                 class="img-fluid">
+
+          </div>
+
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Empreendedorismo e Negócios</h5>
+
+            <p class="text-muted small mb-0">
+              Compartilhamento de experiências, oportunidades e estratégias para quem deseja empreender e crescer.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Item 6: Networking -->
+      <div class="col-sm-6 col-lg-4">
+
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-card">
+
+          <div class="gallery-img-wrapper">
+
+            <img src="https://placehold.co/600x450/4338ca/ffffff?text=Networking"
+                 alt="Networking e conexões profissionais"
+                 class="img-fluid">
+
+          </div>
+
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Conexões e Networking</h5>
+
+            <p class="text-muted small mb-0">
+              Valorização de relacionamentos, troca de experiências e conexões que geram novas oportunidades.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================================================
+     5. SEÇÃO: LOCALIZAÇÃO
+     - Endereço do Diário de Vendas
+     - Horários de atendimento
+     - Contatos
+     - Mapa incorporado
+     ======================================================== -->
+
+<section id="localizacao" class="bg-light">
+
+  <div class="container">
+
+    <div class="text-center mb-5">
+
+      <h2 class="fw-bold text-dark">Onde Estamos</h2>
+
+      <p class="text-secondary">
+        Estamos à disposição para conversar sobre vendas, mentorias, palestras e consultorias. Conheça nosso endereço e entre em contato.
+      </p>
+
+      <div class="section-divider"></div>
+
+    </div>
+
+    <!-- Informações de contato e mapa -->
+    <div class="row g-4 align-items-stretch">
+
+      <!-- Coluna de informações -->
+      <div class="col-lg-5">
+
+        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+
+          <div>
+
+            <h3 class="h4 fw-bold text-dark mb-4">
+              Atendimento Diário de Vendas
+            </h3>
+
+            <!-- Endereço -->
+            <div class="d-flex align-items-start gap-3 mb-4">
+
+              <div class="fs-4 text-primary">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+
+              <div>
+
+                <h6 class="fw-bold mb-1">Endereço</h6>
+
+                <p class="text-secondary mb-0">
+                  Avenida J.-2 Esquina com a - R. L-16 - Papillon Park,<br>
+                  Aparecida de Goiânia - GO,<br>
+                  CEP: 74950-170
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- Horário de atendimento -->
+            <div class="d-flex align-items-start gap-3 mb-4">
+
+              <div class="fs-4 text-primary">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+
+              <div>
+
+                <h6 class="fw-bold mb-1">Horário de Atendimento</h6>
+
+                <p class="text-secondary mb-0">
+                  Segunda a Sexta: 07:00 às 22:00.<br>
+                  Sábados: Fechado.<br>
+                  Domingos: Fechado.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- Contatos -->
+            <div class="d-flex align-items-start gap-3">
+
+              <div class="fs-4 text-primary">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+
+              <div>
+
+                <h6 class="fw-bold mb-1">Central de Atendimento</h6>
+
+                <p class="text-secondary mb-0">
+                  (62) 3284-7959<br>
+                  (62) 3284-7959
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Botão para Google Maps -->
+          <div class="mt-4 pt-3 border-top">
+
+            <a href="https://maps.google.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-outline-primary rounded-pill w-100">
+
+              <i class="bi bi-box-arrow-up-right me-2"></i>
+              Abrir Rota no Google Maps
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Coluna do mapa -->
+      <div class="col-lg-7">
+
+        <div class="map-container shadow-sm">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.035502538439!2d-49.2743776!3d-16.7749092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935efa3cf88001e9%3A0xab508c26038f301c!2zRnVuZGHDp8OjbyBCcmFkZXNjbw!5e0!3m2!1spt-BR!2sbr!4v1794517660621!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================================================
+     6. SEÇÃO: FALE CONOSCO (CONTATO)
+     - Canais de atendimento
+     - Solicitação de mentorias, palestras e consultorias
+     - Formulário de contato
+     - Feedback visual via JavaScript
+     ======================================================== -->
+
+<section id="fale-conosco" class="bg-white">
+
+  <div class="container">
+
+    <!-- Cabeçalho da seção -->
+    <div class="text-center mb-5">
+
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-2 text-uppercase fw-semibold mb-2">
+        Vamos conversar?
+      </span>
+
+      <h2 class="display-6 fw-bold text-dark mt-2">
+        Fale Conosco
+      </h2>
+
+      <p class="text-secondary max-w-xl mx-auto">
+        Quer desenvolver suas vendas, fortalecer seu negócio ou levar conhecimento para sua equipe? Entre em contato e conheça nossas soluções em mentorias, palestras e consultorias.
+      </p>
+
+      <div class="section-divider"></div>
+
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Cartão lateral: Canais de atendimento -->
+      <div class="col-lg-4">
+
+        <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-white bg-dark">
+
+          <h4 class="fw-bold mb-4 text-white">
+            Nossos Canais de Atendimento
+          </h4>
+
+          <!-- WhatsApp -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+
+            <div class="bg-primary bg-opacity-25 p-3 rounded-circle text-primary fs-4">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+
+            <div>
+
+              <small class="text-white-50 d-block">
+                WhatsApp Comercial
+              </small>
+
+              <a href="https://wa.me/6232847959"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="text-white fw-bold text-decoration-none">
+                (62) 3284-7959
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- E-mail -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+
+            <div class="bg-primary bg-opacity-25 p-3 rounded-circle text-primary fs-4">
+              <i class="bi bi-envelope"></i>
+            </div>
+
+            <div>
+
+              <small class="text-white-50 d-block">
+                E-mail para Contato
+              </small>
+
+              <a href="mailto:contato@empresa.com.br"
+                 class="text-white fw-bold text-decoration-none">
+                contato@empresa.com.br
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- Tempo de resposta -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+
+            <div class="bg-primary bg-opacity-25 p-3 rounded-circle text-primary fs-4">
+              <i class="bi bi-clock-history"></i>
+            </div>
+
+            <div>
+
+              <small class="text-white-50 d-block">
+                Tempo Médio de Resposta
+              </small>
+
+              <span class="text-white fw-bold">
+                Em até 2 horas úteis
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- Privacidade -->
+          <div class="mt-auto pt-3 border-top border-secondary border-opacity-25">
+
+            <p class="small text-white-50 mb-0">
+              <i class="bi bi-shield-lock me-1"></i>
+              Seus dados são tratados com responsabilidade e de acordo com a LGPD.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Formulário de contato -->
+      <div class="col-lg-8">
+
+        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+
+          <!-- Alerta de sucesso -->
+          <div id="formSuccessAlert"
+               class="alert alert-success d-none rounded-3 shadow-sm mb-4"
+               role="alert">
+
+            <div class="d-flex align-items-center">
+
+              <i class="bi bi-check-circle-fill fs-4 me-3"></i>
+
+              <div>
+
+                <h6 class="alert-heading fw-bold mb-1">
+                  Mensagem enviada com sucesso!
+                </h6>
+
+                <p class="mb-0 small">
+                  Obrigado por entrar em contato com o Diário de Vendas. Em breve nossa equipe retornará sua mensagem.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Formulário -->
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+
+            <div class="row g-3">
+
+              <!-- Nome -->
+              <div class="col-md-6">
+
+                <label for="nome" class="form-label fw-semibold">
+                  Nome Completo *
+                </label>
+
+                <input type="text"
+                       class="form-control form-control-lg rounded-3 fs-6"
+                       id="nome"
+                       placeholder="Digite seu nome completo"
+                       required>
+
+              </div>
+
+              <!-- E-mail -->
+              <div class="col-md-6">
+
+                <label for="email" class="form-label fw-semibold">
+                  E-mail *
+                </label>
+
+                <input type="email"
+                       class="form-control form-control-lg rounded-3 fs-6"
+                       id="email"
+                       placeholder="seuemail@exemplo.com"
+                       required>
+
+              </div>
+
+              <!-- Telefone -->
+              <div class="col-md-6">
+
+                <label for="telefone" class="form-label fw-semibold">
+                  Telefone / WhatsApp
+                </label>
+
+                <input type="tel"
+                       class="form-control form-control-lg rounded-3 fs-6"
+                       id="telefone"
+                       placeholder="(62) 99999-9999">
+
+              </div>
+
+              <!-- Assunto -->
+              <div class="col-md-6">
+
+                <label for="assunto" class="form-label fw-semibold">
+                  Como podemos ajudar? *
+                </label>
+
+                <select class="form-select form-select-lg rounded-3 fs-6"
+                        id="assunto"
+                        required>
+
+                  <option value="" disabled selected>
+                    Selecione o assunto...
+                  </option>
+
+                  <option value="Mentoria">
+                    Contratação de Mentoria
+                  </option>
+
+                  <option value="Palestra">
+                    Contratação de Palestra
+                  </option>
+
+                  <option value="Consultoria">
+                    Consultoria Empresarial
+                  </option>
+
+                  <option value="Treinamento">
+                    Treinamentos em Vendas
+                  </option>
+
+                  <option value="Parceria">
+                    Proposta de Parceria
+                  </option>
+
+                  <option value="Duvida">
+                    Dúvidas Gerais
+                  </option>
+
+                  <option value="Outro">
+                    Outro assunto
+                  </option>
+
+                </select>
+
+              </div>
+
+              <!-- Mensagem -->
+              <div class="col-12">
+
+                <label for="mensagem" class="form-label fw-semibold">
+                  Sua Mensagem *
+                </label>
+
+                <textarea class="form-control form-control-lg rounded-3 fs-6"
+                          id="mensagem"
+                          rows="4"
+                          placeholder="Conte-nos sobre seu projeto, sua empresa ou o serviço que deseja contratar..."
+                          required></textarea>
+
+              </div>
+
+              <!-- Botão de envio -->
+              <div class="col-12 text-end mt-4">
+
+                <button type="submit"
+                        id="submitBtn"
+                        class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm">
+
+                  <i class="bi bi-send-fill me-2"></i>
+                  Enviar Mensagem
+
+                </button>
+
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================================================
+     7. RODAPÉ (FOOTER)
+     - Identidade institucional do Diário de Vendas
+     - Direitos reservados
+     - Links para redes sociais
+     ======================================================== -->
+
+<footer class="bg-dark text-white py-4 border-top border-secondary border-opacity-25">
+
+  <div class="container">
+
+    <div class="row align-items-center justify-content-between gy-3 text-center text-md-start">
+
+      <!-- Direitos autorais -->
+      <div class="col-md-8">
+
+        <p class="mb-0 text-white-50">
+          &copy; 2026 - Diário de Vendas - Todos os direitos reservados
+        </p>
+
+      </div>
+
+      <!-- Redes sociais e retorno ao início -->
+      <div class="col-md-4 text-md-end">
+
+        <a href="#inicio"
+           class="text-white-50 text-decoration-none me-3"
+           title="Instagram"
+           aria-label="Instagram do Diário de Vendas">
+
+          <i class="bi bi-instagram fs-5"></i>
+
+        </a>
+
+        <a href="#inicio"
+           class="text-white-50 text-decoration-none me-3"
+           title="LinkedIn"
+           aria-label="LinkedIn do Diário de Vendas">
+
+          <i class="bi bi-linkedin fs-5"></i>
+
+        </a>
+
+        <a href="#inicio"
+           class="text-white-50 text-decoration-none me-3"
+           title="Facebook"
+           aria-label="Facebook do Diário de Vendas">
+
+          <i class="bi bi-facebook fs-5"></i>
+
+        </a>
+
+        <!-- Voltar ao início -->
+        <a href="#inicio"
+           class="text-white-50 text-decoration-none"
+           title="Voltar ao início"
+           aria-label="Voltar ao início da página">
+
+          <i class="bi bi-arrow-up-circle fs-5 text-primary"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- ========================================================
+     SCRIPTS: BOOTSTRAP E FUNCIONALIDADES
+     - Fechamento automático do menu mobile
+     - Gerenciamento visual do formulário
+     ======================================================== -->
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+  // ========================================================
+  // FECHAMENTO AUTOMÁTICO DO MENU EM DISPOSITIVOS MÓVEIS
+  // ========================================================
+
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  const menuToggle = document.getElementById('navMenu');
+
+  const bsCollapse = new bootstrap.Collapse(menuToggle, {
+    toggle: false
+  });
+
+  navLinks.forEach((link) => {
+
+    link.addEventListener('click', () => {
+
+      if (
+        window.innerWidth < 992 &&
+        menuToggle.classList.contains('show')
+      ) {
+
+        bsCollapse.hide();
+
+      }
+
+    });
+
+  });
+
+
+  // ========================================================
+  // GERENCIAMENTO VISUAL DO FORMULÁRIO DE CONTATO
+  // IMPORTANTE: ESTE TRECHO AINDA NÃO REALIZA ENVIO REAL.
+  // ========================================================
+
+  function handleContactSubmit(event) {
+
+    event.preventDefault();
+
+    // Captura dos elementos do formulário
+    const submitBtn = document.getElementById('submitBtn');
+
+    const alertBox = document.getElementById('formSuccessAlert');
+
+    const form = document.getElementById('contactForm');
+
+    // Evita cliques repetidos durante o processamento visual
+    submitBtn.disabled = true;
+
+    submitBtn.innerHTML = `
+      <span class="spinner-border spinner-border-sm me-2"
+            role="status"
+            aria-hidden="true"></span>
+      Processando...
+    `;
+
+    // Simulação visual de processamento
+    setTimeout(() => {
+
+      // Restaura o botão
+      submitBtn.disabled = false;
+
+      submitBtn.innerHTML = `
+        <i class="bi bi-send-fill me-2"></i>
+        Enviar Mensagem
+      `;
+
+      // Exibe o alerta visual
+      alertBox.classList.remove('d-none');
+
+      // Limpa o formulário
+      form.reset();
+
+      // Posiciona a tela na mensagem
+      alertBox.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+
+      // Oculta o alerta após 7 segundos
+      setTimeout(() => {
+
+        alertBox.classList.add('d-none');
+
+      }, 7000);
+
+    }, 1000);
+
+  }
+
+</script>
+
+</body>
+</html>
